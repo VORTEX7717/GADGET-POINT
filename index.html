@@ -7,135 +7,36 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #f9f9f9;
-      color: #222;
-    }
-    header {
-      background: linear-gradient(135deg, #0073e6, #005bb5);
-      color: #fff;
-      padding: 30px;
-      text-align: center;
-    }
-    nav {
-      position: sticky;
-      top: 0;
-      background: #fff;
-      display: flex;
-      justify-content: center;
-      border-bottom: 1px solid #ddd;
-      z-index: 1000;
-    }
-    nav a {
-      color: #111;
-      padding: 15px 20px;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    nav a:hover {
-      color: #0073e6;
-    }
-    .hero {
-      padding: 80px 20px;
-      text-align: center;
-      background: url('banner.jpg') center/cover no-repeat;
-      color: #fff;
-    }
-    .hero h2 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.2em;
-    }
-    .section {
-      padding: 40px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    h2 {
-      margin-bottom: 20px;
-      font-size: 2em;
-      color: #111;
-      text-align: center;
-    }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
-    }
-    .product-card {
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      text-align: center;
-      padding: 20px;
-    }
-    .product-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-    }
-    .product-card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 15px;
-    }
-    button {
-      background: #0073e6;
-      color: #fff;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 6px;
-      cursor: pointer;
-      margin-top: 10px;
-      font-weight: 600;
-    }
-    button:hover {
-      background: #005bb5;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    footer {
-      background: #111;
-      color: #fff;
-      text-align: center;
-      padding: 25px;
-      margin-top: 40px;
-    }
-    footer a {
-      color: #0073e6;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-    .insta-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #E1306C;
-      color: #fff;
-      padding: 12px 16px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    .insta-btn:hover {
-      background: #c72c5d;
-    }
+    body {margin:0;font-family:'Poppins',sans-serif;background:#f9f9f9;color:#222;}
+    header {background:linear-gradient(135deg,#0073e6,#005bb5);color:#fff;padding:30px;text-align:center;}
+    nav {position:sticky;top:0;background:#fff;display:flex;justify-content:center;border-bottom:1px solid #ddd;z-index:1000;}
+    nav a {color:#111;padding:15px 20px;text-decoration:none;font-weight:500;}
+    nav a:hover {color:#0073e6;}
+    .hero {padding:100px 20px;text-align:center;background:url('banner.jpg') center/cover no-repeat;color:#fff;}
+    .hero h2 {font-size:2.8em;margin-bottom:15px;text-shadow:2px 2px 6px rgba(0,0,0,0.5);}
+    .hero p {font-size:1.3em;margin-bottom:20px;}
+    .hero a {background:#ff4081;color:#fff;padding:12px 20px;border-radius:30px;text-decoration:none;font-weight:bold;}
+    .hero a:hover {background:#e1306c;}
+    .section {padding:50px 20px;max-width:1200px;margin:auto;}
+    h2 {margin-bottom:30px;font-size:2em;color:#111;text-align:center;}
+    .products {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
+    .product-card {background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 6px 15px rgba(0,0,0,0.1);transition:transform 0.3s,box-shadow 0.3s;text-align:center;padding:20px;position:relative;}
+    .product-card:hover {transform:scale(1.05);box-shadow:0 12px 25px rgba(0,0,0,0.2);}
+    .product-card img {width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:15px;}
+    .badge {position:absolute;top:10px;left:10px;background:#ff4081;color:#fff;padding:5px 10px;border-radius:20px;font-size:0.8em;font-weight:bold;}
+    button {background:#0073e6;color:#fff;border:none;padding:10px 15px;border-radius:6px;cursor:pointer;margin-top:10px;font-weight:600;}
+    button:hover {background:#005bb5;}
+    form input,form textarea {width:100%;padding:10px;margin-bottom:15px;border:1px solid #ccc;border-radius:6px;}
+    footer {background:#111;color:#fff;text-align:center;padding:25px;margin-top:40px;}
+    footer a {color:#0073e6;text-decoration:none;}
+    footer a:hover {text-decoration:underline;}
+    .social-icons a {color:#fff;margin:0 10px;font-size:1.5em;}
+    .social-icons a:hover {color:#ff4081;}
+    .insta-btn {position:fixed;bottom:20px;right:20px;background:#E1306C;color:#fff;padding:12px 16px;border-radius:30px;text-decoration:none;font-weight:bold;box-shadow:0 4px 8px rgba(0,0,0,0.2);}
+    .insta-btn:hover {background:#c72c5d;}
   </style>
 </head>
 <body>
@@ -155,8 +56,9 @@
 
   <!-- Hero -->
   <div class="hero">
-    <h2>Mobile & Computer Accessories</h2>
-    <p>Affordable gadgets, quality you can trust</p>
+    <h2>Affordable Accessories, Delivered Fast</h2>
+    <p>Explore our latest gadgets and gear</p>
+    <a href="#products">Shop Now</a>
   </div>
 
   <!-- Products -->
@@ -164,78 +66,56 @@
     <h2>Our Products</h2>
     <div class="products">
       <div class="product-card">
+        <span class="badge">🔥 Best Seller</span>
         <img src="gloves.jpg" alt="Pubji Gloves">
         <h3>Pubji Gloves Thumb & Finger</h3>
         <p><strong>₹20</strong></p>
-        <button>Buy Now</button>
+        <a href="https://wa.me/917717476770?text=I want to buy Pubji Gloves" target="_blank"><button><i class="fab fa-whatsapp"></i> Order on WhatsApp</button></a>
       </div>
       <div class="product-card">
         <img src="earphone.jpg" alt="Handfree Earphone">
         <h3>Handfree Earphone (Mic + Pouch)</h3>
         <p><strong>₹50</strong></p>
-        <button>Buy Now</button>
+        <a href="https://wa.me/917717476770?text=I want to buy Handfree Earphone" target="_blank"><button><i class="fab fa-whatsapp"></i> Order on WhatsApp</button></a>
       </div>
       <div class="product-card">
+        <span class="badge">⭐ Popular</span>
         <img src="headphones.jpg" alt="Bluetooth Headphones">
         <h3>Wireless Bluetooth Headphones</h3>
         <p><strong>₹299</strong></p>
-        <button>Buy Now</button>
+        <a href="https://wa.me/917717476770?text=I want to buy Bluetooth Headphones" target="_blank"><button><i class="fab fa-whatsapp"></i> Order on WhatsApp</button></a>
       </div>
       <div class="product-card">
         <img src="samsung-earphone.jpg" alt="Samsung Earphone">
         <h3>Samsung On‑Ear Earphone (Loose)</h3>
         <p><strong>₹80</strong></p>
-        <button>Buy Now</button>
+        <a href="https://wa.me/917717476770?text=I want to buy Samsung Earphone" target="_blank"><button><i class="fab fa-whatsapp"></i> Order on WhatsApp</button></a>
       </div>
       <div class="product-card">
         <img src="cable-protector.jpg" alt="Cable Protector">
         <h3>Cable Protector (4 pc Pack)</h3>
         <p><strong>₹20</strong></p>
-        <button>Buy Now</button>
+        <a href="https://wa.me/917717476770?text=I want to buy Cable Protector" target="_blank"><button><i class="fab fa-whatsapp"></i> Order on WhatsApp</button></a>
       </div>
       <div class="product-card">
         <img src="cleaning-gel.jpg" alt="Cleaning Gel">
         <h3>Mobile Cleaning Gel 100ml</h3>
         <p><strong>₹50</strong></p>
-        <button>Buy Now</button>
+        <a href="https://wa.me/917717476770?text=I want to buy Cleaning Gel" target="_blank"><button><i class="fab fa-whatsapp"></i> Order on WhatsApp</button></a>
       </div>
       <div class="product-card">
         <img src="battery.jpg" alt="AA Battery">
         <h3>Eveready AA Battery</h3>
         <p><strong>₹30</strong></p>
-        <button>Buy Now</button>
+        <a href="https://wa.me/917717476770?text=I want to buy AA Battery" target="_blank"><button><i class="fab fa-whatsapp"></i> Order on WhatsApp</button></a>
       </div>
       <div class="product-card">
         <img src="crystal-ball.jpg" alt="Crystal Ball">
         <h3>Galaxy Crystal Ball with USB Light</h3>
         <p><strong>₹150</strong></p>
-        <button>Buy Now</button>
+        <a href="https://wa.me/917717476770?text=I want to buy Crystal Ball" target="_blank"><button><i class="fab fa-whatsapp"></i> Order on WhatsApp</button></a>
       </div>
       <div class="product-card">
+        <span class="badge">🎵 New</span>
         <img src="speaker.jpg" alt="Portable Speaker">
-        <h3>10W Portable Speaker with Bass</h3>
-        <p><strong>₹350</strong></p>
-        <button>Buy Now</button>
-      </div>
-      <div class="product-card">
-        <img src="charger.jpg" alt="Charger">
-        <h3>2.4 Amp Charger with V8 Cable</h3>
-        <p><strong>₹120</strong></p>
-        <button>Buy Now</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="section">
-    <h2>About Gadget Point</h2>
-    <p>Based in Friends Colony, Ludhiana, we offer reliable mobile and computer accessories tailored for smart users. From chargers to headphones, we deliver quality and style at great prices.</p>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/yourformid" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="_replyto" placeholder="Your Email" required>
-      <textarea name="message" rows="5
+        <h3
