@@ -3,114 +3,177 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gadget Point</title>
+  <title>GADGET‑POINT</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <style>
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      font-family: 'Roboto', sans-serif;
+      background-color: #ffffff;
+      color: #222;
+      line-height: 1.6;
     }
     header {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: white;
+      background-color: #111;
+      color: #fff;
       padding: 20px;
       text-align: center;
     }
     nav {
       display: flex;
       justify-content: center;
-      background-color: #222;
+      background-color: #f8f8f8;
+      border-bottom: 1px solid #ddd;
     }
     nav a {
-      color: white;
+      color: #111;
       padding: 15px 20px;
       text-decoration: none;
+      font-weight: 500;
     }
     nav a:hover {
-      background-color: #444;
+      color: #0073e6;
     }
     .hero {
-      padding: 40px;
+      padding: 60px 20px;
       text-align: center;
-      background-image: url('your-banner.jpg'); /* Replace with your banner */
-      background-size: cover;
-      background-position: center;
-      color: white;
+      background-color: #f4f4f4;
     }
     .section {
       padding: 40px 20px;
-      text-align: center;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      margin-bottom: 20px;
+      font-size: 1.8em;
+      color: #111;
     }
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
-      padding: 20px;
     }
     .product-card {
-      background: white;
+      background: #fff;
+      border: 1px solid #eee;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 6px;
+      text-align: center;
+      transition: box-shadow 0.3s ease;
+    }
+    .product-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: #0073e6;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #005bb5;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
     }
     footer {
-      background-color: #222;
-      color: white;
+      background-color: #111;
+      color: #fff;
       text-align: center;
       padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
+  <!-- Logo Header -->
   <header>
-    <h1>Gadget POINT</h1>
-    <p>Smart Solutions for Smart Devices</p>
+    <div style="display:flex; align-items:center; justify-content:center; gap:10px;">
+      <div style="width:35px; height:35px; background-color:#0073e6; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:bold;">
+        GP
+      </div>
+      <h1 style="margin:0; font-size:1.8em; font-weight:600;">GADGET‑POINT</h1>
+    </div>
+    <p style="margin-top:8px; font-size:1em; color:#ccc;">Smart Solutions for Smart Devices</p>
   </header>
 
+  <!-- Navigation -->
   <nav>
     <a href="#products">Products</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
   </nav>
 
+  <!-- Hero Section -->
   <div class="hero">
     <h2>Mobile & Computer Accessories Virtual Store</h2>
     <p>Explore our latest gadgets and gear</p>
   </div>
 
+  <!-- Products -->
   <section id="products" class="section">
     <h2>Our Products</h2>
     <div class="products">
       <div class="product-card">
+        <img src="earbuds.jpg" alt="Wireless Earbuds">
         <h3>Wireless Earbuds</h3>
         <p>High-quality sound, long battery life</p>
+        <p><strong>₹1,499</strong></p>
+        <button>Buy Now</button>
       </div>
       <div class="product-card">
+        <img src="coolingpad.jpg" alt="Laptop Cooling Pad">
         <h3>Laptop Cooling Pad</h3>
         <p>Keep your device cool and efficient</p>
+        <p><strong>₹999</strong></p>
+        <button>Buy Now</button>
       </div>
       <div class="product-card">
+        <img src="powerbank.jpg" alt="Power Bank">
         <h3>Power Bank</h3>
         <p>Fast charging, compact design</p>
+        <p><strong>₹1,299</strong></p>
+        <button>Buy Now</button>
       </div>
-      <!-- Add more product cards here -->
     </div>
   </section>
 
+  <!-- About -->
   <section id="about" class="section">
     <h2>About Gadget Point</h2>
     <p>Based in Friends Colony, Ludhiana, we offer reliable mobile and computer accessories tailored for smart users. From chargers to keyboards, we deliver quality and style at great prices.</p>
   </section>
 
+  <!-- Contact -->
   <section id="contact" class="section">
     <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="_replyto" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
     <p>Email: gadgetpoint067@gmail.com</p>
     <p>Phone: +91 77194 76770</p>
     <p>Location: Friends Colony, Ludhiana</p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2026 Gadget Point. All rights reserved.</p>
   </footer>
