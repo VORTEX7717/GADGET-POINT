@@ -3,44 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GADGET‑POINT | Premium Accessories</title>
+  <title>GADGET‑POINT | Luxury Accessories</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body {margin:0;font-family:'Poppins',sans-serif;background:#121212;color:#fff;}
-    header {background:linear-gradient(135deg,#00bfff,#0073e6);padding:40px;text-align:center;}
-    header h1 {font-size:2.5em;margin:0;font-weight:600;}
-    header p {color:#ffd700;font-size:1.2em;margin-top:10px;}
-    nav {position:sticky;top:0;background:#1e1e1e;display:flex;justify-content:center;border-bottom:1px solid #333;z-index:1000;}
+    body {margin:0;font-family:'Poppins',sans-serif;background:#000;color:#fff;}
+    header {background:#111;padding:40px;text-align:center;}
+    header h1 {font-size:2.5em;margin:0;font-weight:600;color:#FFD700;}
+    header p {color:#FFC107;font-size:1.2em;margin-top:10px;}
+    nav {position:sticky;top:0;background:#111;display:flex;justify-content:center;border-bottom:1px solid #333;z-index:1000;}
     nav a {color:#fff;padding:15px 20px;text-decoration:none;font-weight:500;}
-    nav a:hover {color:#00bfff;}
+    nav a:hover {color:#FFD700;}
     .hero {padding:120px 20px;text-align:center;background:url('banner.jpg') center/cover no-repeat;position:relative;}
     .hero::after {content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);}
     .hero h2,.hero p,.hero a {position:relative;z-index:1;}
-    .hero h2 {font-size:3em;margin-bottom:15px;text-shadow:0 0 15px #00bfff;}
+    .hero h2 {font-size:3em;margin-bottom:15px;text-shadow:0 0 15px #FFD700;color:#FFD700;}
     .hero p {font-size:1.3em;margin-bottom:20px;}
-    .hero a {background:#ffd700;color:#121212;padding:14px 24px;border-radius:30px;text-decoration:none;font-weight:bold;}
-    .hero a:hover {background:#ffcc00;}
+    .hero a {background:linear-gradient(135deg,#FFD700,#FFC107);color:#000;padding:14px 24px;border-radius:30px;text-decoration:none;font-weight:bold;}
+    .hero a:hover {background:linear-gradient(135deg,#FFC107,#FFD700);box-shadow:0 0 15px rgba(255,215,0,0.8);}
     .section {padding:60px 20px;max-width:1200px;margin:auto;}
-    h2 {margin-bottom:30px;font-size:2em;color:#ffd700;text-align:center;}
+    h2 {margin-bottom:30px;font-size:2em;color:#FFD700;text-align:center;}
     .products {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;}
-    .product-card {background:#1e1e1e;border-radius:16px;overflow:hidden;box-shadow:0 8px 25px rgba(0,0,0,0.7);transition:transform 0.3s,box-shadow 0.3s;text-align:center;padding:20px;position:relative;}
-    .product-card:hover {transform:translateY(-8px) scale(1.03);box-shadow:0 12px 35px rgba(0,0,0,0.9);border:1px solid #00bfff;}
+    .product-card {background:#111;border-radius:16px;overflow:hidden;box-shadow:0 8px 25px rgba(255,215,0,0.2);transition:transform 0.3s,box-shadow 0.3s;text-align:center;padding:20px;position:relative;}
+    .product-card:hover {transform:translateY(-8px) scale(1.03);box-shadow:0 0 25px rgba(255,215,0,0.7);border:1px solid #FFD700;}
     .product-card img {width:100%;height:220px;object-fit:cover;border-radius:10px;margin-bottom:15px;}
-    .badge {position:absolute;top:10px;left:10px;background:#ff4081;color:#fff;padding:6px 12px;border-radius:20px;font-size:0.8em;font-weight:bold;}
-    button {background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;border:none;padding:12px 20px;border-radius:30px;font-weight:bold;cursor:pointer;}
-    button:hover {background:linear-gradient(135deg,#128C7E,#25D366);}
-    form input,form textarea {width:100%;padding:12px;margin-bottom:15px;border:1px solid #444;border-radius:6px;background:#1e1e1e;color:#fff;}
-    footer {background:#000;color:#fff;text-align:center;padding:30px;margin-top:40px;}
-    footer a {color:#00bfff;text-decoration:none;}
-    footer a:hover {text-decoration:underline;}
-    .social-icons a {color:#fff;margin:0 12px;font-size:1.6em;}
-    .social-icons a:hover {color:#ffd700;}
-    .insta-btn {position:fixed;bottom:20px;right:20px;background:#E1306C;color:#fff;padding:12px 16px;border-radius:30px;text-decoration:none;font-weight:bold;box-shadow:0 4px 8px rgba(0,0,0,0.2);}
-    .insta-btn:hover {background:#c72c5d;}
+    .badge {position:absolute;top:10px;left:10px;background:#FFD700;color:#000;padding:6px 12px;border-radius:20px;font-size:0.8em;font-weight:bold;}
+    .product-card p {color:#FFD700;font-weight:bold;}
+    button {background:linear-gradient(135deg,#FFD700,#FFC107);color:#000;border:none;padding:12px 20px;border-radius:30px;font-weight:bold;cursor:pointer;}
+    button:hover {background:linear-gradient(135deg,#FFC107,#FFD700);box-shadow:0 0 15px rgba(255,215,0,0.8);}
+    form input,form textarea {width:100%;padding:12px;margin-bottom:15px;border:1px solid #444;border-radius:6px;background:#111;color:#fff;}
+    footer {background:#111;color:#fff;text-align:center;padding:30px;margin-top:40px;}
+    footer a {color:#FFD700;}
+    footer a:hover {text-shadow:0 0 10px #FFD700;}
+    .social-icons a {color:#FFD700;margin:0 12px;font-size:1.6em;}
+    .social-icons a:hover {color:#FFC107;}
+    .floating-btn {position:fixed;bottom:20px;right:20px;background:linear-gradient(135deg,#FFD700,#FFC107);color:#000;padding:12px 18px;border-radius:30px;text-decoration:none;font-weight:bold;font-size:14px;box-shadow:0 0 15px rgba(255,215,0,0.6);transition:all 0.3s ease;}
+    .floating-btn:hover {background:linear-gradient(135deg,#FFC107,#FFD700);box-shadow:0 0 25px rgba(255,215,0,0.9);transform:scale(1.05);}
+    .floating-btn i {margin-right:8px;}
   </style>
 </head>
 <body>
@@ -48,7 +50,7 @@
   <!-- Header -->
   <header>
     <h1>GADGET‑POINT</h1>
-    <p>Premium Accessories • Trusted Quality</p>
+    <p>Luxury Accessories • Trusted Quality</p>
   </header>
 
   <!-- Navigation -->
@@ -70,65 +72,10 @@
   <section id="products" class="section">
     <h2>Our Premium Collection</h2>
     <div class="products">
-      <div class="product-card">
-        <span class="badge">🔥 Best Seller</span>
-        <img src="gloves.jpg" alt="Pubji Gloves">
-        <h3>Pubji Gloves Thumb & Finger</h3>
-        <p><strong>₹20</strong></p>
-        <a href="https://wa.me/917717476770?text=I want to buy Pubji Gloves" target="_blank"><button><i class="fab fa-whatsapp"></i> Order Instantly</button></a>
-      </div>
-      <!-- Repeat for other products with same structure -->
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="section">
-    <h2>About Gadget Point</h2>
-    <p>Based in Ludhiana, Gadget Point delivers premium mobile and computer accessories designed for modern lifestyles. We combine affordability with quality, ensuring every product enhances your tech experience.</p>
-  </section>
-
-  <!-- Instagram -->
-  <section id="instagram" class="section" style="text-align:center;">
-    <h2>Follow Us on Instagram</h2>
-    <p>Discover our latest gadgets, offers, and customer stories.</p>
-    <!-- Replace iframe src with your SnapWidget/LightWidget embed code -->
-    <iframe src="https://snapwidget.com/embed/123456" 
-            class="snapwidget-widget" 
-            allowtransparency="true" 
-            frameborder="0" 
-            scrolling="no" 
-            style="border:none; overflow:hidden; width:100%; height:400px"></iframe>
-    <br><br>
-    <a href="https://www.instagram.com/gadgetpoint067" target="_blank" 
-       style="display:inline-block;background:linear-gradient(135deg,#ff4081,#e1306c);color:#fff;padding:12px 20px;
-              border-radius:30px;text-decoration:none;font-weight:bold;">
-      <i class="fab fa-instagram"></i> Visit Instagram Page
-    </a>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/yourformid" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="_replyto" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <p>Email: gadgetpoint067@gmail.com</p>
-    <p>Phone: +91 77194 76770</p>
-    <p>Location:Ludhiana</p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 Gadget Point. All rights reserved.</p>
-    <div class="social-icons">
-      <a href="https://www.instagram.com/gadgetpoint067" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/917717476770" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      <a href="mailto:gadgetpoint067@gmail.com"><i class="fas fa-envelope"></i></a>
-    </div>
-  </footer>
-
-  <!-- Floating Instagram Button -->
-  <a href="https://www.instagram.com
+      <div class="product-card"><span class="badge">🔥 Best Seller</span><img src="gloves.jpg"><h3>Pubji Gloves Thumb & Finger</h3><p>₹20</p><a href="https://wa.me/917717476770?text=I want to buy Pubji Gloves" target="_blank"><button><i class="fab fa-whatsapp"></i> Order Instantly</button></a></div>
+      <div class="product-card"><img src="earphone.jpg"><h3>Handfree Earphone (Mic + Pouch)</h3><p>₹50</p><a href="https://wa.me/917717476770?text=I want to buy Handfree Earphone" target="_blank"><button><i class="fab fa-whatsapp"></i> Order Instantly</button></a></div>
+      <div class="product-card"><span class="badge">⭐ Popular</span><img src="headphones.jpg"><h3>Wireless Bluetooth Headphones</h3><p>₹299</p><a href="https://wa.me/917717476770?text=I want to buy Bluetooth Headphones" target="_blank"><button><i class="fab fa-whatsapp"></i> Order Instantly</button></a></div>
+      <div class="product-card"><img src="samsung-earphone.jpg"><h3>Samsung On‑Ear Earphone (Loose)</h3><p>₹80</p><a href="https://wa.me/917717476770?text=I want to buy Samsung Earphone" target="_blank"><button><i class="fab fa-whatsapp"></i> Order Instantly</button></a></div>
+      <div class="product-card"><img src="cable-protector.jpg"><h3>Cable Protector (4 pc Pack)</h3><p>₹20</p><a href="https://wa.me/917717476770?text=I want to buy Cable Protector" target="_blank"><button><i class="fab fa-whatsapp"></i> Order Instantly</button></a></div>
+      <div class="product-card"><img src="cleaning-gel.jpg"><h3>Mobile Cleaning Gel 100ml</h3><p>₹50</p><a href="https://wa.me/917717476770?text=I want to buy Cleaning Gel" target="_blank"><button><i class="fab fa-whatsapp"></i> Order Instantly</button></a></div>
+      <div class="product-card"><img src="battery.jpg"><h3>Eveready AA Battery</h3><p>₹30</p><a href="https://wa.me/917717476770?text=I want to buy AA Battery" target="_
