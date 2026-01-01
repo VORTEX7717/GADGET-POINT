@@ -4,135 +4,39 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GADGET‑POINT</title>
-  <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: #ffffff;
-      color: #222;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #111;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #f8f8f8;
-      border-bottom: 1px solid #ddd;
-    }
-    nav a {
-      color: #111;
-      padding: 15px 20px;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    nav a:hover {
-      color: #0073e6;
-    }
-    .hero {
-      padding: 60px 20px;
-      text-align: center;
-      background-color: #f4f4f4;
-    }
-    .section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      margin-bottom: 20px;
-      font-size: 1.8em;
-      color: #111;
-    }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .product-card {
-      background: #fff;
-      border: 1px solid #eee;
-      padding: 20px;
-      border-radius: 6px;
-      text-align: center;
-      transition: box-shadow 0.3s ease;
-    }
-    .product-card:hover {
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    .product-card img {
-      width: 100%;
-      border-radius: 6px;
-      margin-bottom: 10px;
-    }
-    button {
-      background-color: #0073e6;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 4px;
-      cursor: pointer;
-      margin-top: 10px;
-    }
-    button:hover {
-      background-color: #005bb5;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 8px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    footer {
-      background-color: #111;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-    footer a {
-      color: #0073e6;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-    /* Floating Instagram Button */
-    .insta-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #E1306C;
-      color: #fff;
-      padding: 12px 16px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    .insta-btn:hover {
-      background: #c72c5d;
-    }
+    body {margin:0;font-family:'Roboto',sans-serif;background:#fff;color:#222;}
+    header {background:#111;color:#fff;padding:20px;text-align:center;}
+    nav {display:flex;justify-content:center;background:#f8f8f8;border-bottom:1px solid #ddd;}
+    nav a {color:#111;padding:15px 20px;text-decoration:none;font-weight:500;}
+    nav a:hover {color:#0073e6;}
+    .hero {padding:60px 20px;text-align:center;background:#f4f4f4;}
+    .section {padding:40px 20px;max-width:1000px;margin:auto;}
+    h2 {margin-bottom:20px;font-size:1.8em;color:#111;}
+    .products {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+    .product-card {background:#fff;border:1px solid #eee;padding:20px;border-radius:6px;text-align:center;transition:box-shadow 0.3s;}
+    .product-card:hover {box-shadow:0 4px 12px rgba(0,0,0,0.1);}
+    .product-card img {width:100%;border-radius:6px;margin-bottom:10px;}
+    button {background:#0073e6;color:#fff;border:none;padding:10px 15px;border-radius:4px;cursor:pointer;margin-top:10px;}
+    button:hover {background:#005bb5;}
+    form input,form textarea {width:100%;padding:8px;margin-bottom:15px;border:1px solid #ccc;border-radius:4px;}
+    footer {background:#111;color:#fff;text-align:center;padding:20px;margin-top:40px;}
+    footer a {color:#0073e6;text-decoration:none;}
+    footer a:hover {text-decoration:underline;}
+    .insta-btn {position:fixed;bottom:20px;right:20px;background:#E1306C;color:#fff;padding:12px 16px;border-radius:30px;text-decoration:none;font-weight:bold;box-shadow:0 4px 8px rgba(0,0,0,0.2);}
+    .insta-btn:hover {background:#c72c5d;}
   </style>
 </head>
 <body>
 
   <!-- Logo Header -->
   <header>
-    <div style="display:flex; align-items:center; justify-content:center; gap:10px;">
-      <div style="width:35px; height:35px; background-color:#0073e6; border-radius:50%; display:flex; align-items:center; justify-content:center; color:#fff; font-weight:bold;">
-        GP
-      </div>
-      <h1 style="margin:0; font-size:1.8em; font-weight:600;">GADGET‑POINT</h1>
+    <div style="display:flex;align-items:center;justify-content:center;gap:10px;">
+      <div style="width:35px;height:35px;background:#0073e6;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:bold;">GP</div>
+      <h1 style="margin:0;font-size:1.8em;font-weight:600;">GADGET‑POINT</h1>
     </div>
-    <p style="margin-top:8px; font-size:1em; color:#ccc;">Smart Solutions for Smart Devices</p>
+    <p style="margin-top:8px;font-size:1em;color:#ccc;">Smart Solutions for Smart Devices</p>
   </header>
 
   <!-- Navigation -->
@@ -142,7 +46,7 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <div class="hero">
     <h2>Mobile & Computer Accessories Virtual Store</h2>
     <p>Explore our latest gadgets and gear</p>
@@ -153,24 +57,63 @@
     <h2>Our Products</h2>
     <div class="products">
       <div class="product-card">
-        <img src="earbuds.jpg" alt="Wireless Earbuds">
-        <h3>Wireless Earbuds</h3>
-        <p>High-quality sound, long battery life</p>
-        <p><strong>₹1,499</strong></p>
+        <h3>Pubji Gloves Thumb & Finger</h3>
+        <p>Gaming gloves for smooth play</p>
+        <p><strong>₹20</strong></p>
         <button>Buy Now</button>
       </div>
       <div class="product-card">
-        <img src="coolingpad.jpg" alt="Laptop Cooling Pad">
-        <h3>Laptop Cooling Pad</h3>
-        <p>Keep your device cool and efficient</p>
-        <p><strong>₹999</strong></p>
+        <h3>Handfree Earphone (Mic + Pouch)</h3>
+        <p>Affordable earphones with mic</p>
+        <p><strong>₹50</strong></p>
         <button>Buy Now</button>
       </div>
       <div class="product-card">
-        <img src="powerbank.jpg" alt="Power Bank">
-        <h3>Power Bank</h3>
-        <p>Fast charging, compact design</p>
-        <p><strong>₹1,299</strong></p>
+        <h3>Wireless Bluetooth Headphones</h3>
+        <p>Sports headset, best sound & comfort</p>
+        <p><strong>₹299</strong></p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product-card">
+        <h3>Samsung On‑Ear Earphone (Loose)</h3>
+        <p>Budget earphones for daily use</p>
+        <p><strong>₹80</strong></p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product-card">
+        <h3>Cable Protector (4 pc Pack)</h3>
+        <p>Protect your charging cables</p>
+        <p><strong>₹20</strong></p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product-card">
+        <h3>Mobile Cleaning Gel 100ml</h3>
+        <p>Keep your devices clean</p>
+        <p><strong>₹50</strong></p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product-card">
+        <h3>Eveready AA Battery</h3>
+        <p>Reliable power for devices</p>
+        <p><strong>₹30</strong></p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product-card">
+        <h3>Galaxy Crystal Ball with USB Light</h3>
+        <p>Unique gifting accessory</p>
+        <p><strong>₹150</strong></p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product-card">
+        <h3>10W Portable Speaker with Bass</h3>
+        <p>Compact speaker with deep sound</p>
+        <p><strong>₹350</strong></p>
+        <button>Buy Now</button>
+      </div>
+      <div class="product-card">
+        <h3>2.4 Amp Charger with V8 Cable</h3>
+        <p>Fast charging solution</p>
+        <p><strong>₹120</strong></p>
         <button>Buy Now</button>
       </div>
     </div>
@@ -179,7 +122,7 @@
   <!-- About -->
   <section id="about" class="section">
     <h2>About Gadget Point</h2>
-    <p>Based in Friends Colony, Ludhiana, we offer reliable mobile and computer accessories tailored for smart users. From chargers to keyboards, we deliver quality and style at great prices.</p>
+    <p>Based in Friends Colony, Ludhiana, we offer reliable mobile and computer accessories tailored for smart users. From chargers to headphones, we deliver quality and style at great prices.</p>
   </section>
 
   <!-- Contact -->
@@ -199,14 +142,11 @@
   <!-- Footer -->
   <footer>
     <p>&copy; 2026 Gadget Point. All rights reserved.</p>
-    <p>
-      📸 Follow us on 
-      <a href="https://instagram.com/gadgetpoint067" target="_blank">Instagram</a>
-    </p>
+    <p>📸 Follow us on <a href="https://www.instagram.com/gadgetpoint067" target="_blank">Instagram</a></p>
   </footer>
 
   <!-- Floating Instagram Button -->
-  <a href="https://instagram.com/gadgetpoint067" target="_blank" class="insta-btn">Instagram</a>
+  <a href="https://www.instagram.com/gadgetpoint067" target="_blank" class="insta-btn">Instagram</a>
 
 </body>
 </html>
